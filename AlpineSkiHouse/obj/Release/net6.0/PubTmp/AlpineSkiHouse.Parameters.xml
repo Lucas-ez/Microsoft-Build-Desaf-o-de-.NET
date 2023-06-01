@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="AlpineSkiHouse20230530103818" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\lbres\\OneDrive\\Escritorio\\Code\\Microsoft\ Build\ Desafío\ de\ \.NET\\AlpineSkiHouse\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
-  </parameter>
-</parameters>
