@@ -1,0 +1,18 @@
+// Compila e inicia api web
+
+dotnet run
+
+// Crea los archivos para un proyecto de API web básico que usa controladores
+
+dotnet new webapi -f net6.0
+
+// Instala la herramienta de línea de comandos .NET HTTP REPL que se va a usar para realizar solicitudes HTTP a la API web.
+
+dotnet tool install -g Microsoft.dotnet-httprepl
+
+// Conéctese a la API web mediante el comando siguiente:
+
+httprepl https://localhost:{PORT}
+
+// alternativa
+connect https://localhost:{PORT}
