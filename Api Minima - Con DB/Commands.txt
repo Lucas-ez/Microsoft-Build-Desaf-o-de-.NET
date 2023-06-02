@@ -1,0 +1,28 @@
+#Creacion de la api minima
+
+dotnet new web -o PizzaStore -f net6.0
+
+#Instalar Swashbuckle
+
+dotnet add package Swashbuckle.AspNetCore --version 6.2.3
+
+#Instalar Entity Framework Core (InMemory?)
+
+dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 6.0
+
+# Proveedor de bases de datos SQLite para EF Core
+
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.0
+
+# Herramientas de EF Core ( Para migrations )
+
+dotnet tool install --global dotnet-ef
+
+# Microsoft.EntityFrameworkCore.Design ( para que cree la DB)
+
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0
+
+# migrations 
+
+dotnet ef migrations add InitialCreate
+dotnet ef database update
