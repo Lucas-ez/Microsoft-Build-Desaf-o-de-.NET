@@ -1,0 +1,2 @@
+#Simula api con  json
+npx json-server --watch db.json
