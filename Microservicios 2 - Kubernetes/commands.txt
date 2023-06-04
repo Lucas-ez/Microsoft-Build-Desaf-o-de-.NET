@@ -1,0 +1,24 @@
+docker-compose build
+docker-compose up
+
+--------------------------------------------------------------
+
+docker tag pizzafrontend [YOUR DOCKER USER NAME]/pizzafrontend
+docker tag pizzabackend [YOUR DOCKER USER NAME]/pizzabackend
+
+docker push [YOUR DOCKER USER NAME]/pizzafrontend
+docker push [YOUR DOCKER USER NAME]/pizzabackend
+
+
+kubectl get pods
+
+# despues de crear archivo
+
+kubectl apply -f backend-deploy.yml
+kubectl apply -f frontend-deploy.yml
+
+
+
+#Escala microservicio
+kubectl scale --replicas=5 deployment/pizzabackend
+kubectl scale --replicas=1 deployment/pizzabackend
