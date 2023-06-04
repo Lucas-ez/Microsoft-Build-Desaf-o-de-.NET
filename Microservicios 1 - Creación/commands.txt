@@ -1,0 +1,12 @@
+docker build -t pizzabackend .
+
+docker images
+
+docker run -it --rm -p 5200:80 --name pizzabackendcontainer pizzabackend
+
+
+// Docker compose
+// Despues de crear el archivo docker compose
+
+docker-compose build
+docker-compose up
